@@ -1,4 +1,4 @@
-switch(ori)
+/*switch(ori)
 {
 	case 0:
 		image_index = 0;
@@ -13,5 +13,5 @@ switch(ori)
 		image_index = 3;
 	break;
 }
-
+*/
 draw_self();
