@@ -1,3 +1,11 @@
+// --- Ataque --- //
+att = 0;
+weapon = "";
+
+s_att_up = noone;
+s_att_right = noone;
+s_att_down = noone;
+
 // --- Movimiento --- //
 
 move = 1;

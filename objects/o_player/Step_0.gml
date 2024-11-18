@@ -4,6 +4,14 @@ if(move){
 	
 	f_player_inputs();
 
+	if(keyboard_check(vk_control) and weapon != "")
+	{
+		dir_mov = -1;
+		att = 1;
+		move = 0;
+		
+		f_att();
+	}
 	// --- Speed --- //
 	
 	if(dir_mov != -1)
@@ -23,33 +31,8 @@ if(move){
 }
 	
 // --- Desplazamiento --- //
-	
-switch(dir_mov)
-{
-	case 0:
-	case 90:
-	case 180:
-	case 270:
-		move_contact_solid(dir_mov, speed_mov);
-		ori = dir_mov;
-	break;
-	case 45:
-		move_contact_solid(0, speed_mov_d);
-		move_contact_solid(90, speed_mov_d);
-	break;
-	case 135:
-		move_contact_solid(90, speed_mov_d);
-		move_contact_solid(180, speed_mov_d);
-	break;
-	case 225:
-		move_contact_solid(180, speed_mov_d);
-		move_contact_solid(270, speed_mov_d);
-	break;
-	case 315:
-		move_contact_solid(270, speed_mov_d);
-		move_contact_solid(0, speed_mov_d);
-	break;
-}
+
+f_desplazamiento();
 	
 // --- Reset --- //
 	
@@ -59,9 +42,14 @@ dir_mov = -1;
 switch(ori)
 {
 	case 0:
+		
 		if(speed_mov == 0)
 		{
-			sprite_index = s_stand_right;
+			if(att)
+			{
+				sprite_index = s_att_right;
+			}
+			else sprite_index = s_stand_right;
 		}
 		else
 		{
@@ -77,7 +65,11 @@ switch(ori)
 	case 90:
 		if(speed_mov == 0)
 		{
-			sprite_index = s_stand_up;
+			if(att)
+			{
+				sprite_index = s_att_up;
+			}
+			else sprite_index = s_stand_up;
 		}
 		else
 		{
@@ -93,7 +85,11 @@ switch(ori)
 	case 180:
 		if(speed_mov == 0)
 		{
-			sprite_index = s_stand_right;
+			if(att)
+			{
+				sprite_index = s_att_right;
+			}
+			else sprite_index = s_stand_right;
 		}
 		else
 		{
@@ -109,7 +105,11 @@ switch(ori)
 	case 270:
 		if(speed_mov == 0)
 		{
-			sprite_index = s_stand_down;
+			if(att)
+			{
+				sprite_index = s_att_down;
+			}
+			else sprite_index = s_stand_down;
 		}
 		else
 		{
