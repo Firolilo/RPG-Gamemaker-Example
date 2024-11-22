@@ -8,5 +8,9 @@ function f_att(){
 			instance_create_depth(x,y,depth,o_axe);
 		break;
 		
+		case "firebolt":
+			image_index = 0;
+			instance_create_depth(x,y,depth,o_firebolt);
+		break;
 	}
 }

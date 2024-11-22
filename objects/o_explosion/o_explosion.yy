@@ -1,20 +1,17 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_axe",
+  "name": "o_explosion",
   "spriteId": {
-    "name": "s_axe_mask",
-    "path": "sprites/s_axe_mask/s_axe_mask.yy",
+    "name": "s_explosion",
+    "path": "sprites/s_explosion/s_explosion.yy",
   },
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_att_melee",
-    "path": "objects/o_att_melee/o_att_melee.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -28,13 +25,13 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Axe",
-    "path": "folders/Objects/Player/attacks/Axe.yy",
+    "name": "Fire",
+    "path": "folders/Objects/Player/attacks/Fire.yy",
   },
 }

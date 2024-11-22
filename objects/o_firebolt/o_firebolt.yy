@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_axe",
+  "name": "o_firebolt",
   "spriteId": {
-    "name": "s_axe_mask",
-    "path": "sprites/s_axe_mask/s_axe_mask.yy",
+    "name": "s_firebolt",
+    "path": "sprites/s_firebolt/s_firebolt.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_att_melee",
-    "path": "objects/o_att_melee/o_att_melee.yy",
+    "name": "o_att",
+    "path": "objects/o_att/o_att.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -29,12 +29,14 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_solid","path":"objects/o_solid/o_solid.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"o_enemy_body","path":"objects/o_enemy_body/o_enemy_body.yy",},},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":1,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Axe",
-    "path": "folders/Objects/Player/attacks/Axe.yy",
+    "name": "Fire",
+    "path": "folders/Objects/Player/attacks/Fire.yy",
   },
 }

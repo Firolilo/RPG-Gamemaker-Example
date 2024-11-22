@@ -9,5 +9,12 @@ function f_change_weapon(argument0){
 			o_player.s_att_down = s_axe_down;
 			o_player.s_att_up = s_axe_up;
 		break;
+		
+		case "firebolt":
+			o_player.weapon = "firebolt";
+			o_player.s_att_right = s_fire_right;
+			o_player.s_att_down = s_fire_down;
+			o_player.s_att_up = s_fire_up;
+		break;
 	}
 }
