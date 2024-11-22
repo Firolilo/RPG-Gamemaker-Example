@@ -5,7 +5,7 @@ function f_att(){
 	{
 		case "axe":
 			image_index = 0;
-			instance_create_layer(x,y,depth,o_axe)
+			instance_create_depth(x,y,depth,o_axe);
 		break;
 		
 	}

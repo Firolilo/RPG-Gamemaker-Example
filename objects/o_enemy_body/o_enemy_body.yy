@@ -1,19 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "o_axe",
-  "spriteId": {
-    "name": "s_axe_mask",
-    "path": "sprites/s_axe_mask/s_axe_mask.yy",
-  },
+  "name": "o_enemy_body",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "o_att_melee",
-    "path": "objects/o_att_melee/o_att_melee.yy",
+    "name": "o_enemy",
+    "path": "objects/o_enemy/o_enemy.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
@@ -28,13 +25,12 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":7,"eventType":7,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "attacks",
-    "path": "folders/Objects/Player/attacks.yy",
+    "name": "Enemies",
+    "path": "folders/Objects/Enemies.yy",
   },
 }
