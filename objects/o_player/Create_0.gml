@@ -1,3 +1,11 @@
+// --- Stats --- //
+
+hpMax = 50;
+hp = hpMax;
+
+
+
+
 // --- Ataque --- //
 att = 0;
 weapon = "";
@@ -17,6 +25,11 @@ speed_max = 8;
 accel = 1;
 
 ori = 270;
+
+// --- Control --- //
+
+invi = 0;
+invi_max = 45; 
 
 //No se que para el player
 

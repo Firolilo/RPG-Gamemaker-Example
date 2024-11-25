@@ -36,7 +36,7 @@ f_desplazamiento();
 	
 // --- Reset --- //
 	
-dir_mov = -1;
+if(move) dir_mov = -1;
 
 // --- Orientacion --- //
 switch(ori)
@@ -122,6 +122,16 @@ switch(ori)
 		o_inter_mask.image_angle = 90;
 	break;
 }
-
-
 mask_index = s_player_mask;
+// --- Control ---
+if(invi > 0)
+{
+	invi -=1;
+	image_alpha = 0.8;
+	image_blend = c_red;
+}
+else
+{
+	image_blend = c_white
+	image_alpha = 1;	
+}
