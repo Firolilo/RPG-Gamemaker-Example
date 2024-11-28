@@ -3,9 +3,6 @@
 hpMax = 50;
 hp = hpMax;
 
-
-
-
 // --- Ataque --- //
 att = 0;
 weapon = "";
@@ -30,6 +27,7 @@ ori = 270;
 
 invi = 0;
 invi_max = 45; 
+dead = 0;
 
 //No se que para el player
 

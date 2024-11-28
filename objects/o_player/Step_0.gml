@@ -1,3 +1,20 @@
+// --- Death --- //
+if(hp <= 0 and !dead)
+{ 
+	dead = 1;
+	move = 0;
+	dir_mov = -1;
+	speed_mov = 0;
+	speed_mov_d = 0;
+	att = 0;
+	invi = 999;
+	alarm[0]=-1;
+	visible = 0;
+	
+	alarm[1] = 100;
+	
+}
+
 if(move){
 
 	// --- Input --- //
