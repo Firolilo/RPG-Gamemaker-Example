@@ -74,7 +74,7 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Map",
-    "path": "folders/Sprites/Map.yy",
+    "name": "Objs",
+    "path": "folders/Sprites/Objs.yy",
   },
 }
